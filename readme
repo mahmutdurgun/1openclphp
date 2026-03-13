@@ -1,0 +1,15 @@
+{
+    "name": "sera",
+    "host": "192.168.1.102",
+    "protocol": "sftp",
+    "port": 247,
+    "username": "mahmut",
+    "password": "openclaw2026",
+    "remotePath": "/app",
+    "uploadOnSave": true,
+    "ignore": [
+        ".vscode",
+        ".git",
+        ".DS_Store"
+    ]
+}
