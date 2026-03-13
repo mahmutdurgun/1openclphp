@@ -8,7 +8,7 @@ services:
       # Apache / PHP Web arayüzü için
       - "8180:80"
       # OpenClaw web/API arayüzü portu
-      - "8201:8000"
+      - "8201:18789"
     volumes:
       # Ana makineye dokunmadan dosyaları bu klasörde izole tutuyoruz
       - ./app_data:/app
