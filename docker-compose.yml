@@ -1,0 +1,15 @@
+services:
+  openclaw-php-app:
+    build: .
+    container_name: openclaw_php_app
+    ports:
+      # Dışarıdan SFTP ile bağlanmak için
+      - "8223:22"
+      # Apache / PHP Web arayüzü için
+      - "8180:80"
+      # OpenClaw web/API arayüzü portu
+      - "8201:8000"
+    volumes:
+      # Ana makineye dokunmadan dosyaları bu klasörde izole tutuyoruz
+      - ./app_data:/app
+    restart: unless-stopped
